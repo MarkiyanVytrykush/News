@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="280" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="279.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-ff-gpG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="EBR-ff-gpG" secondAttribute="height" multiplier="16:9" id="yuO-vc-6b1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="News Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G49-Oi-sEE">
+                        <rect key="frame" x="8" y="188" width="86" height="20"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="news sourse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGA-f0-GCW">
+                        <rect key="frame" x="8" y="216" width="104" height="20"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-Mt-fkQ">
+                        <rect key="frame" x="214" y="188" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="0lW-Au-810"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijC-aW-mPT">
+                        <rect key="frame" x="272" y="188" width="40" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4cr-JB-SK4"/>
+                            <constraint firstAttribute="width" secondItem="ijC-aW-mPT" secondAttribute="height" multiplier="20:21" id="oxv-1w-OF5"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="5"/>
+                        <state key="normal" title="&gt;" image="Arrow">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonActionSafari" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jpj-JB-xWy"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="News Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-uf-m65">
+                        <rect key="frame" x="8" y="244" width="280" height="19.5"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ijC-aW-mPT" firstAttribute="leading" secondItem="qhx-Mt-fkQ" secondAttribute="trailing" constant="8" id="4bb-9e-DOh"/>
+                    <constraint firstItem="hWS-uf-m65" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7cz-1k-gs2"/>
+                    <constraint firstAttribute="trailing" secondItem="ijC-aW-mPT" secondAttribute="trailing" constant="8" id="ImJ-l2-tRP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hWS-uf-m65" secondAttribute="trailing" constant="16" id="OXX-Nb-io6"/>
+                    <constraint firstItem="dGA-f0-GCW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="U5d-z5-3B5"/>
+                    <constraint firstItem="G49-Oi-sEE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Wm7-DX-2g9"/>
+                    <constraint firstItem="dGA-f0-GCW" firstAttribute="top" secondItem="G49-Oi-sEE" secondAttribute="bottom" constant="8" id="ZBO-6H-uZL"/>
+                    <constraint firstItem="qhx-Mt-fkQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="G49-Oi-sEE" secondAttribute="trailing" constant="8" id="abO-fR-jDP"/>
+                    <constraint firstItem="qhx-Mt-fkQ" firstAttribute="top" secondItem="EBR-ff-gpG" secondAttribute="bottom" constant="8" id="gIa-RB-6CU"/>
+                    <constraint firstAttribute="bottom" secondItem="hWS-uf-m65" secondAttribute="bottom" constant="16" id="gPP-0e-Kk0"/>
+                    <constraint firstItem="ijC-aW-mPT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dGA-f0-GCW" secondAttribute="trailing" constant="8" id="h2I-XD-3zq"/>
+                    <constraint firstItem="G49-Oi-sEE" firstAttribute="top" secondItem="EBR-ff-gpG" secondAttribute="bottom" constant="8" id="jyS-8w-Akx"/>
+                    <constraint firstAttribute="trailing" secondItem="EBR-ff-gpG" secondAttribute="trailing" id="ls3-zd-a4h"/>
+                    <constraint firstItem="hWS-uf-m65" firstAttribute="top" secondItem="dGA-f0-GCW" secondAttribute="bottom" constant="8" id="mjb-tv-ZZp"/>
+                    <constraint firstItem="EBR-ff-gpG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r6J-Ae-dFd"/>
+                    <constraint firstItem="EBR-ff-gpG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wdE-1e-cSo"/>
+                    <constraint firstItem="ijC-aW-mPT" firstAttribute="top" secondItem="EBR-ff-gpG" secondAttribute="bottom" constant="8" id="ztM-72-Www"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageShowNews" destination="EBR-ff-gpG" id="2i3-Fp-AEG"/>
+                <outlet property="newsDataLabel" destination="qhx-Mt-fkQ" id="3rC-ri-2Fh"/>
+                <outlet property="newsDescriptionLabel" destination="hWS-uf-m65" id="1Df-aZ-3Wa"/>
+                <outlet property="newsSourseLabel" destination="dGA-f0-GCW" id="nZx-95-WlF"/>
+                <outlet property="newsTitleLabel" destination="G49-Oi-sEE" id="RMa-tE-Ljs"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="120.53973013493254"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Arrow" width="156.52174377441406" height="156.52174377441406"/>
+        <image name="placeholder" width="1280" height="720"/>
+    </resources>
+</document>
